@@ -181,7 +181,9 @@ public:
 };
 
 ->STRING TO INTEGER (ATOI)
- int myAtoi(string s) {
+class Solution {
+public:
+     int myAtoi(string s) {
         long long ans = 0;
         
         int i=0, n = s.length(), pos = 1;
