@@ -10,7 +10,6 @@ public:
          if(A[i] == A[i-1]) 
     {
         count++;
-             cout<<A[i];
     }
     else A[i-count] = A[i];
 }
