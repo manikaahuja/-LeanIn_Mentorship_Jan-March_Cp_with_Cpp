@@ -85,6 +85,22 @@ public:
 };
 
 ->ROTATE ARRAY
+class Solution {
+public:
+    void rotate(vector<int>& nums, int k) {
+        vector <int> v(nums.size());
+        int n=nums.size();
+
+        for(int i=0;i<nums.size();i++)
+        { 
+            v[((i+k)%n)]=nums[i];
+            
+        }
+        for(int j=0;j<n;j++){
+            nums[j]=v[j];
+        }
+    }
+};
 
 2. STRING QUESTIONS
 
